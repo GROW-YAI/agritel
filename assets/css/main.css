@@ -1,29 +1,40 @@
-
 /* Fonts */
 :root {
-  --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Marcellus",  sans-serif;
-  --nav-font: "Marcellus",  sans-serif;
+  --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Marcellus", sans-serif;
+  --nav-font: "Marcellus", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #2d465e; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #116530; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+:root {
+  --background-color: #ffffff;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #212529;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #2d465e;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #116530;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #212529;  /* The default color of the main navmenu links */
-  --nav-hover-color: #116530; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #116530; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #212529;
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #116530;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #212529;
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #116530;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -143,14 +154,17 @@ h6 {
   top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Semi-transparent black */
   color: white;
   padding: 15px 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
-  z-index: 10; /* Ensure it's above other elements */
-  display: none; /* Initially hidden */
+  z-index: 10;
+  /* Ensure it's above other elements */
+  display: none;
+  /* Initially hidden */
 }
 
 #statistic-container h3 {
@@ -164,11 +178,13 @@ h6 {
 }
 
 .carousel-item {
-  position: relative; /* Ensure carousel item is a positioned parent */
+  position: relative;
+  /* Ensure carousel item is a positioned parent */
 }
 
-.carousel-container:hover + #statistic-container {
-  display: block; /* Show statistic container on hover */
+.carousel-container:hover+#statistic-container {
+  display: block;
+  /* Show statistic container on hover */
 }
 
 
@@ -802,7 +818,7 @@ section,
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 10px;
   position: relative;
 }
 
@@ -893,6 +909,13 @@ section,
   .hero h2,
   .hero p {
     max-width: 60%;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .col-lg-4-7 {
+    width: 39.16666667%;
   }
 }
 
@@ -1003,6 +1026,7 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
+
 .services .content .service-item .service-item-icon {
   position: relative;
   margin-bottom: 20px;
@@ -1038,6 +1062,10 @@ section,
 
 .services .content .service-item .service-item-content p {
   font-size: 15px;
+}
+
+.services p {
+  font-size: 20px;
 }
 
 @media (min-width: 769px) {
@@ -1078,7 +1106,7 @@ section,
 .about .content {
   background: var(--accent-color);
   color: var(--contrast-color);
-  padding: 7rem 0;
+  padding: 1rem 0;
 }
 
 .about .content .img-overlap {
@@ -1093,6 +1121,7 @@ section,
   color: var(--contrast-color);
   font-weight: 300;
   text-align: left;
+  font-size: 1.4rem;
 }
 
 .about .content-title strong {
@@ -1399,6 +1428,7 @@ section,
   box-shadow: none;
   outline: none;
   background-color: var(--contrast-color);
+  color: #0d3225;
   border: 1px solid var(--contrrast-color);
 }
 
@@ -1424,6 +1454,10 @@ section,
 
 .about-3 .list-check {
   margin-bottom: 50px;
+}
+
+.about-3 p {
+  font-size: 18px;
 }
 
 .about-3 .list-check li {
@@ -1464,14 +1498,21 @@ section,
 }
 
 .team .person figure {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
   margin-bottom: 0;
   padding-bottom: 0;
   position: relative;
   overflow: hidden;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .team .person img {
+  width:80%;
+  height: 95%;
+  object-fit: cover;
+  display: block;
   transition: 0.3s all ease;
 }
 
@@ -2300,4 +2341,105 @@ section,
   padding-left: 5px;
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
+}
+
+.milestone-roadmap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 900px;
+  margin: 40px auto;
+  font-family: sans-serif;
+}
+
+.milestone {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  border-left: 4px solid #ccc;
+  position: relative;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.milestone::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 25px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.milestone.completed::before {
+  background-color: black;
+}
+
+.milestone.current::before {
+  background-color: green;
+}
+
+.milestone.pending::before {
+  background-color: #aaa;
+}
+
+.icon {
+  font-size: 2em;
+  margin-top: 5px;
+}
+
+.details h3 {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.details p {
+  margin: 5px 0 0;
+  font-size: 0.95em;
+  color: #444;
+}
+
+.status {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 2px 8px;
+  font-size: 0.8em;
+  border-radius: 4px;
+  background-color: #eee;
+  color: #333;
+}
+
+.milestone.completed .status {
+  background-color: black;
+  color: white;
+}
+
+.milestone.current .status {
+  background-color: green;
+  color: white;
+}
+
+.milestone.pending .status {
+  background-color: #aaa;
+  color: white;
+}
+
+.highlight1 p {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: green;
+}
+
+.highlight2 p {
+  color: green;
+}
+
+
+@media (max-width: 768px) {
+  .milestone-roadmap {
+    grid-template-columns: 1fr;
+  }
 }
